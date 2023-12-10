@@ -21,12 +21,5 @@ public class PaymentFactoryTest {
         Payment payment = PaymentFactory.create(PaymentMethod.GOOGLE_PAY);
         Assertions.assertTrue(payment instanceof GooglePayPayment);
     }
-
-//    @Test
-//    void createUnsupportedPayment() {
-//        assertThrows(RuntimeException.class, () -> PaymentFactory.create(PaymentMethod.));
-//    }
-//    private void assertThrows(Class<RuntimeException> runtimeExceptionClass, Object o) {
-//    }
 }
 

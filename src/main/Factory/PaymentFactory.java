@@ -18,7 +18,6 @@ public class PaymentFactory {
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
                 }
-
             }
         }
     }
