@@ -1,5 +1,5 @@
+package main.Strategy;
 import java.math.BigDecimal;
-
 public class FixedAmount implements DiscountStrategy{
     private final BigDecimal discountAmount;
 
@@ -13,7 +13,9 @@ public class FixedAmount implements DiscountStrategy{
         BigDecimal zero= new BigDecimal("0");
         if(result.compareTo(zero) >0 )
             return amount.subtract(discountAmount);
-        else return zero;
-
+        else {
+            System.out.println("This discount can not be applied here");
+            return amount;
+        }
     }
 }

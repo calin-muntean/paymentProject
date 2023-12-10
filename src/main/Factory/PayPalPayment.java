@@ -1,11 +1,12 @@
+package main.Factory;
 import java.math.BigDecimal;
+import main.Strategy.*;
+import main.Singleton.*;
+public class PayPalPayment implements Payment{
 
-public class CreditCardPayment implements  Payment{
     @Override
     public void pay(BigDecimal amount,DiscountStrategy discountStrategy) {
         BigDecimal discountedAmount= discountStrategy.applyDiscount(amount);
-        PaymentGateway.getInstance().processPayment("CreditCard",discountedAmount);
+    PaymentGateway.getInstance().processPayment("PayPal",discountedAmount);
     }
-
-
 }

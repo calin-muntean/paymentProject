@@ -1,5 +1,5 @@
+package main.Factory;
 import java.text.MessageFormat;
-
 public class PaymentFactory {
     public static Payment create(PaymentMethod paymentMethod){
         switch (paymentMethod){

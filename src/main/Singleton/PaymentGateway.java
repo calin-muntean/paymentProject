@@ -1,6 +1,5 @@
+package main.Singleton;
 import java.math.BigDecimal;
-import java.sql.SQLOutput;
-
 public class PaymentGateway {
     private static PaymentGateway instance;
     private PaymentGateway(){}
