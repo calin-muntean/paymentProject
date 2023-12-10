@@ -8,3 +8,5 @@ The create method in the PaymentFactory class takes a PaymentMethod enum as an a
 If the requested payment method is CREDIT_CARD, PAYPAL, or GOOGLE_PAY, it returns a new instance of the corresponding concrete product.
 ## Strategy Pattern
 I used it to encapsulate and make strategies for applying discounts, there are tree choices: NoDiscount, FixedDiscount and PercentageDiscount.
+## Test
+I also write unit tests for PaymentFactory and DiscountStrategy
