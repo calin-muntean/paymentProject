@@ -8,6 +8,4 @@ public class CreditCardPayment implements  Payment{
         BigDecimal discountedAmount= discountStrategy.applyDiscount(amount);
         PaymentGateway.getInstance().processPayment("CreditCard",discountedAmount);
     }
-
-
 }

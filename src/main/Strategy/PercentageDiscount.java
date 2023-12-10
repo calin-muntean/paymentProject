@@ -3,11 +3,9 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 public class PercentageDiscount implements DiscountStrategy {
     private final BigDecimal percentage;
-
     public PercentageDiscount(BigDecimal percentage) {
         this.percentage = percentage;
     }
-
     @Override
     public BigDecimal applyDiscount(BigDecimal amount) {
         if (percentage.doubleValue() < 90 && percentage.doubleValue() > 0) {

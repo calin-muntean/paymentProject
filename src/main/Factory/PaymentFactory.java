@@ -8,19 +8,16 @@ public class PaymentFactory {
             }
             case PAYPAL -> {
                 return new PayPalPayment();
-
             }
             case GOOGLE_PAY -> {
                 return new GooglePayPayment();
             }
             default -> {
-
                 try {
                     throw new ClassNotFoundException(MessageFormat.format("{0} is not supported",paymentMethod));
                 } catch (ClassNotFoundException e) {
                     throw new RuntimeException(e);
                 }
-
 
             }
         }
